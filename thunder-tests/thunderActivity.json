@@ -40,5 +40,90 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "b2a51c9b-deb0-4b8e-a1fd-85c99fdc241c",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3001/products",
+    "url": "localhost:3001/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-27T15:30:09.183Z",
+    "modified": "2023-04-27T17:03:09.160Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"ProdutoY\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "847078aa-85fb-4442-8402-44602148cc38",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3001/products",
+    "url": "localhost:3001/products",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-27T15:51:18.058Z",
+    "modified": "2023-04-27T17:12:10.444Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"ProdutoY\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8aa0d7ca-47e1-441c-b846-6a46983ab9c3",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3001",
+    "url": "localhost:3001",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-27T15:51:35.879Z",
+    "modified": "2023-04-27T15:51:35.879Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "30e294e7-7178-4b99-9eb4-87e98071a4e0",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3001/",
+    "url": "localhost:3001/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-27T15:51:39.097Z",
+    "modified": "2023-04-27T17:12:02.502Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"ProdutoY\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d4dd0189-777e-4559-832b-10479e86a3ff",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3001/products/1",
+    "url": "localhost:3001/products/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-27T15:52:05.119Z",
+    "modified": "2023-04-27T15:52:05.119Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
