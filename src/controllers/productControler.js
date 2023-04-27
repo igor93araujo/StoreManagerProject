@@ -16,7 +16,7 @@ const getById = async (req, res) => {
 const insertProduct = async (req, res) => {
   const newProduct = req.body;
   const result = await productService.insertProduct(newProduct);
-  if (result.type) return res.status(result.type).json({message: result.message});
+  if (result.type) return res.status(result.type).json({ message: result.message });
   return res.status(result.type).json(result.message);
 };
 
