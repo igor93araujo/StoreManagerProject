@@ -1,12 +1,12 @@
 const { expect } = require('chai');
 const sinon = require('sinon');
 const connection = require('../../../src/models/connection');
-const productModel = require('../../../src/models/productModel')
+const salesModel = require('../../../src/models/salesModel');
 
-const { getAllMockWithData, getDataByIdMock } = require('../models/mocks/products.mock');
+const { getAllMockWithData, getDataByIdMock } = require('./mocks/sales.mock');
 
 
-describe('Question Model tests', () => {
+describe('Sales Model tests', () => {
   describe('Sucess case', () => {
     afterEach(() => sinon.restore());
 
@@ -15,25 +15,25 @@ describe('Question Model tests', () => {
     it('GetAll with data', async () => {
       sinon.stub(connection, 'execute').resolves([getAllMockWithData]);
 
-      const result = await productModel.getAll();
+      const result = await salesModel.getAll();
 
       expect(result).to.be.an('array');
-      expect(result).to.have.length(3);
-      expect(result[0]).to.contain.keys(['id', 'name']);
+      expect(result).to.have.length(2);
+      expect(result[0]).to.contain.keys(['id', 'date']);
     });
 
     it('Get data by id', async () => {
       sinon.stub(connection, 'execute').resolves([getDataByIdMock]);
-      const result = await productModel.getById(1);
+      const result = await salesModel.getById(2);
       expect(result).to.contain.keys('id', 'name');
       expect(result).to.be.equal(getDataByIdMock[0]);
     });
 
 /*     it('Tests an unexistent id', async () => {
       sinon.stub(connection, 'execute').resolves(undefined);
-      const result = await productModel.getById(INVALID_ID);
+      const result = await salesModel.getById(INVALID_ID);
       expect(result).to.equal({
-        "message": "Product not found"
+        "message": "Sale not found"
       });
     }); */
   });
@@ -44,7 +44,7 @@ describe('Question Model tests', () => {
       sinon.stub(connection, 'execute').throws(new Error('Fake error'));
 
       try {
-        await productModel.getAll();
+        await salesModel.getAll();
         expect.fail();
       } catch (error) {
         expect(error.message).to.be.equal('Fake error');
