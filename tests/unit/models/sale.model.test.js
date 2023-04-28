@@ -24,7 +24,7 @@ describe('Sales Model tests', () => {
 
     it('Get data by id', async () => {
       sinon.stub(connection, 'execute').resolves([getDataByIdMock]);
-      const result = await salesModel.getById(2);
+      const [result] = await salesModel.getById(2);
       expect(result).to.contain.keys('id', 'name');
       expect(result).to.be.equal(getDataByIdMock[0]);
     });
