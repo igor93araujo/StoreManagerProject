@@ -28,6 +28,25 @@
     "tests": []
   },
   {
+    "_id": "db606f29-bb2c-4209-9451-77498287ddaa",
+    "colId": "history",
+    "containerId": "",
+    "name": "allProducts Copy",
+    "url": "localhost:3001/products/2",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2023-04-26T18:54:06.212Z",
+    "modified": "2023-04-30T13:15:43.331Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
     "_id": "2cff0bea-0bd0-43ba-aa6f-a8180e4063c7",
     "colId": "history",
     "containerId": "",

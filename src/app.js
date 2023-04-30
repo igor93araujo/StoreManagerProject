@@ -10,7 +10,7 @@ app.get('/', (_request, response) => {
   response.send();
 });
 
-app.get('/', (_req, res) => res.status(200).json());
+// app.get('/', (_req, res) => res.status(200).json());
 app.use('/products', productRouter);
 app.use('/sales', salesRouter);
 
