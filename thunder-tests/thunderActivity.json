@@ -31,19 +31,33 @@
     "_id": "db606f29-bb2c-4209-9451-77498287ddaa",
     "colId": "history",
     "containerId": "",
-    "name": "allProducts Copy",
+    "name": "updateProduct",
     "url": "localhost:3001/products/2",
     "method": "PUT",
     "sortNum": 0,
     "created": "2023-04-26T18:54:06.212Z",
-    "modified": "2023-04-30T13:15:43.331Z",
+    "modified": "2023-04-30T13:36:49.003Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"\"\n}",
+      "raw": "{\n  \"name\": \"11\"\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "02f61857-b1ec-4046-87a5-053576e741d0",
+    "colId": "history",
+    "containerId": "",
+    "name": "deleteProduct",
+    "url": "localhost:3001/products/4",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-04-26T18:54:06.212Z",
+    "modified": "2023-04-30T14:07:22.644Z",
+    "headers": [],
+    "params": [],
     "tests": []
   },
   {

@@ -28,8 +28,15 @@ const updateProduct = async (id, name) => {
     'UPDATE StoreManager.products SET name = ? WHERE id = ?;',
     [name, id],
   );
-  // console.log('update model', updatedProduct)
   return updatedProduct;
 };
 
-module.exports = { getAll, getById, insertProduct, updateProduct }; 
+const deleteProduct = async (id) => {
+  const deletedProduct = await connection.execute(
+    'DELETE FROM StoreManager.products WHERE id = ?;',
+    [id],
+  );
+  return deletedProduct;
+};
+
+module.exports = { getAll, getById, insertProduct, updateProduct, deleteProduct }; 
