@@ -36,12 +36,12 @@
     "method": "PUT",
     "sortNum": 0,
     "created": "2023-04-26T18:54:06.212Z",
-    "modified": "2023-04-30T13:36:49.003Z",
+    "modified": "2023-05-02T13:26:11.051Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"11\"\n}",
+      "raw": "{\n  \"name\": \"Jefferson\"\n}",
       "form": []
     },
     "tests": []
@@ -79,11 +79,11 @@
     "colId": "history",
     "containerId": "",
     "name": "getAllSales",
-    "url": "localhost:3001/sales/999",
+    "url": "localhost:3001/sales/",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-04-26T19:56:59.677Z",
-    "modified": "2023-04-28T20:27:38.944Z",
+    "modified": "2023-05-02T01:17:37.325Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -97,7 +97,7 @@
     "method": "GET",
     "sortNum": 0,
     "created": "2023-04-26T19:56:59.677Z",
-    "modified": "2023-04-28T20:17:01.209Z",
+    "modified": "2023-05-02T01:16:45.073Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -111,12 +111,12 @@
     "method": "POST",
     "sortNum": 0,
     "created": "2023-04-27T18:03:08.850Z",
-    "modified": "2023-04-27T18:03:08.850Z",
+    "modified": "2023-05-02T21:38:14.245Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "[\n  {\n    \"productId\": 1,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
+      "raw": "  [\n  {\n    \"productId\": 1,\n    \"quantity\": 2\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 1\n  },\n    {\n    \"productId\": 3,\n    \"quantity\": 1\n  }\n]",
       "form": []
     },
     "tests": []

@@ -5,9 +5,12 @@ const insertSale = async () => {
   return { type: null, message: sale };
 };
 
-const insertSalesProducts = async () => {
-  const newSaleProduct = await salesModel.insertSalesProducts();
-  return { type: null, message: newSaleProduct };
+const insertSalesProducts = async (saleId, sales) => {
+  await Promise.all(sales
+    .map((product) => salesModel
+      .insertSalesProducts(saleId, product.productId, product.quantity)));
+  const objSale = { id: saleId, itemsSold: sales };
+  return { type: 201, message: objSale };
 };
 
 const getAll = async () => {
