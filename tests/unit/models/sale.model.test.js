@@ -28,14 +28,22 @@ describe('Sales Model tests', () => {
       expect(result).to.contain.keys('id', 'name');
       expect(result).to.be.equal(getDataByIdMock[0]);
     });
-
-/*     it('Tests an unexistent id', async () => {
-      sinon.stub(connection, 'execute').resolves(undefined);
+    it('Get data by invalid id', async () => {
+      sinon.stub(connection, 'execute').resolves([]);
       const result = await salesModel.getById(INVALID_ID);
-      expect(result).to.equal({
-        "message": "Sale not found"
-      });
-    }); */
+      expect(result).to.be.equal(undefined);
+    });
+    it('Delete data by id', async () => {
+      sinon.stub(connection, 'execute').resolves([]);
+      const result = await salesModel.deleteSale(2);
+      expect(result).to.be.equal(undefined);
+    });
+    it('Delete data by invalid id', async () => {
+      sinon.stub(connection, 'execute').resolves([]);
+      const result = await salesModel.deleteSale(INVALID_ID);
+      expect(result).to.be.equal(undefined);
+    }
+    );
   });
 
   describe('Fail case', () => {

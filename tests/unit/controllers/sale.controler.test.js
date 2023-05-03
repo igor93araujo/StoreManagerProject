@@ -49,5 +49,22 @@ describe('Sales Controller Test', () => {
       expect(res.status).to.have.been.calledWith(200);
       expect(res.json).to.have.been.calledWith([getDataByIdMock]);
     });
+
+    it('deleteSale', async () => {
+      sinon.stub(salesService, 'deleteSale').resolves({});
+      const req = {
+        params: {
+          id: 1,
+        }
+      };
+      const res = {};
+      res.status = sinon.stub().returns(res);
+      res.json = sinon.stub().returns();
+
+      await salesControler.deleteSale(req, res);
+
+      expect(res.status).to.have.been.calledWith(204);
+      expect(res.json).to.have.been.calledWith();
+    });
   });
 });
