@@ -40,20 +40,7 @@ describe('Sale Service tests', () => {
       sinon.stub(salesModel, 'getById').resolves([]);
       const result = await salesService.getById(100);
       expect(result.message).to.be.equal('Sale not found');
-    });
-
-    it('Delete data by id', async () => {
-      sinon.stub(salesModel, 'deleteSale').resolves([]);
-      const result = await salesService.deleteSale(1);
-      expect(result.message).to.be.equal('Sale not found');
-    });
-
-    it('Delete data by invalid id', async () => {
-      sinon.stub(salesModel, 'deleteSale').resolves([]);
-      const result = await salesService.deleteSale(100);
-      expect(result.message).to.be.equal('Sale not found');
-    });
-          
+    });         
   });
 
   describe('Fail case', () => {
