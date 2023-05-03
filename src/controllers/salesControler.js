@@ -2,9 +2,8 @@ const salesService = require('../services/salesService');
 
 const insertSales = async (req, res) => {
   const sales = req.body;
-  const id = await salesService.insertSale();
-    
-  const { type, message } = await salesService.insertSalesProducts(id.message, sales);
+  const salesServiceObj = await salesService.insertSale();    
+  const { type, message } = await salesService.insertSalesProducts(salesServiceObj.message, sales);
   return res.status(type).json(message);
 };
 

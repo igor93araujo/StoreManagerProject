@@ -3,7 +3,6 @@ const productModel = require('../models/productModel');
 const validateProductIdSales = (req, res, next) => {
   const JSON = req.body;
   const productId = JSON.map((e) => e.productId);
-  console.log('productId:', productId);
   if (productId.some((e) => e === undefined)) {
     return res.status(400).json({ message: '"productId" is required' });
   }
@@ -26,8 +25,9 @@ const validateQuantitySales = (req, res, next) => {
 
 const validateProductIdSalesExist = async (req, res, next) => {
   const JSON = req.body;
-  const productId = await Promise.all(JSON.map((e) => productModel.getById(e.productId)));
-  const hasntProducts = productId.some((product) => product === undefined);
+  const allProducts = await Promise.all(JSON.map((e) => productModel.getById(e.productId)));
+  const hasntProducts = allProducts.some((product) => product === undefined);
+  console.log(hasntProducts);
   if (hasntProducts) {
     return res.status(404).json({ message: 'Product not found' });
   }

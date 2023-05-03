@@ -107,16 +107,16 @@
     "colId": "history",
     "containerId": "",
     "name": "addSale",
-    "url": "localhost:3001/sales",
+    "url": "localhost:3001/sales/",
     "method": "POST",
     "sortNum": 0,
     "created": "2023-04-27T18:03:08.850Z",
-    "modified": "2023-05-02T21:38:14.245Z",
+    "modified": "2023-05-03T13:54:03.732Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "  [\n  {\n    \"productId\": 1,\n    \"quantity\": 2\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 1\n  },\n    {\n    \"productId\": 3,\n    \"quantity\": 1\n  }\n]",
+      "raw": "  [\n  {\n    \"productId\": 1,\n    \"quantity\": 2\n  },\n  {\n    \"productId\": 200,\n    \"quantity\": 1\n  },\n    {\n    \"productId\": 3,\n    \"quantity\": 1\n  }\n]",
       "form": []
     },
     "tests": []
