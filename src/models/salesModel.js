@@ -46,4 +46,20 @@ const deleteSale = async (id) => {
   return sale;
 };
 
+// const updateSale = async (id, sales) => {
+//   const [sale] = await connection.execute(
+//     'UPDATE StoreManager.sales SET date = NOW() WHERE id = ?;', [id],
+//   );
+//   await connection.execute(
+//     'DELETE FROM StoreManager.sales_products WHERE sale_id = ?;', [id],
+//   );
+//   await Promise.all(sales
+//     .map((product) => connection
+//       .execute('INSERT INTO StoreManager.sales_products (sale_id, product_id, quantity) VALUES (?, ?, ?);',
+//         [id, product.productId, product.quantity])));
+//   const objSale = { id, itemsSold: sales };
+//   return objSale;
+// };
+
+
 module.exports = { insertSales, insertSalesProducts, getAll, getById, deleteSale }; 
