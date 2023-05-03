@@ -2,7 +2,7 @@
 
 <strong>👨‍💻 O que foi desenvolvido?</strong>
 
-O projeto Store Manager foi desenvolvido o back-end de uma aplicação Restful API utilizando a arquitetura MSC (model-service-controller)!
+No projeto Store Manager foi desenvolvido o back-end de uma aplicação Restful API utilizando a arquitetura MSC (model-service-controller)!
 A API, ao seu final, é um sistema de gerenciamento de vendas no formato dropshipping em que é possível criar, visualizar, deletar e atualizar produtos e vendas. Utilizei, também, o banco de dados MySQL para a gestão de dados. 
 <br />
 
