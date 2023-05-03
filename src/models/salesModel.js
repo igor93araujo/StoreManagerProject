@@ -61,5 +61,4 @@ const deleteSale = async (id) => {
 //   return objSale;
 // };
 
-
 module.exports = { insertSales, insertSalesProducts, getAll, getById, deleteSale }; 
