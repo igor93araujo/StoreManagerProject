@@ -21,4 +21,6 @@ A API, ao seu final, é um sistema de gerenciamento de vendas no formato dropshi
 
 <br />
 <strong>💬 Desafios </strong><br />
-Esse foi um projeto bastante desafiador onde pude aplicar e reforçar conceitos muito importantes no universo Back-end,como o uso e manipulação de banco de dados e a criação de endpoints de acordo com cada tipo de requisição HTTP. Conteudo, gostei muito de realizá-lo e creio que pude consolidar mais os assuntos abordados acima. 
+Esse foi um projeto bastante desafiador onde pude aplicar e reforçar conceitos muito importantes no universo Back-end,como o uso e manipulação de banco de dados,a criação de endpoints de acordo com cada tipo de requisição HTTP e, além disso, a garantia da boa organização e divisão de blocos de códigos por meio da arquitetura de software MSC. 
+<br/>
+Conteudo, gostei muito de realizá-lo e creio que pude consolidar mais mais os assuntos acima abordados. 
