@@ -19,6 +19,6 @@ A API, ao seu final, é um sistema de gerenciamento de vendas no formato dropshi
 - Validações estruturais com Middlewares;<br />
 - Arquitetura de Software MSC (model, service e controler);<br />
 
-<br /><br /><br />
+<br />
 <strong>💬 Desafios </strong><br />
 Esse foi um projeto bastante desafiador onde pude aplicar e reforçar conceitos muito importantes no universo Back-end,como o uso e manipulação de banco de dados e a criação de endpoints de acordo com cada tipo de requisição HTTP. Conteudo, gostei muito de realizá-lo e creio que pude consolidar mais os assuntos abordados acima. 
