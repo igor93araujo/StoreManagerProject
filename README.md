@@ -14,7 +14,6 @@ A API, ao seu final, é um sistema de gerenciamento de vendas no formato dropshi
 - Requisições HTTP;<br />
 - MySQL;<br />
 - MySQL WorkBench;<br />
-- MySQL;<br />
 - Mocha, CHAI e SINON para testes unitários<br />
 - Validações estruturais com Middlewares;<br />
 - Arquitetura de Software MSC (model, service e controler);<br />
